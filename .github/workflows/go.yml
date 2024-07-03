@@ -26,7 +26,7 @@ jobs:
         run: go install mvdan.cc/garble@latest
 
       - name: 1
-        run: ls /opt/hostedtoolcache/go/1.21.12/x64/bin/
+        run: find / -name garble
 
       - name: Get dependencies
         run: |
