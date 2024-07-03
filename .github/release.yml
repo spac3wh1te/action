@@ -9,6 +9,8 @@ jobs:
   server:
     name: server
     runs-on: ubuntu-latest
+    env:
+      PATH: ${{ github.workspace }}:/home/runner/go/bin:$PATH
     steps:
       - name: Set up Go 1.21.12
         uses: actions/setup-go@v1
