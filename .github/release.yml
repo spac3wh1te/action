@@ -21,15 +21,20 @@ jobs:
       - name: Check out branch
         uses: actions/checkout@v2
 
-      - name: Install garble
+      - name: ls
         run:  ls /home/runner/go/bin
 
       - name: Install garble
-        run: go install mvdan.cc/garble@latest
+        run:  go install mvdan.cc/garble@latest
+
+      - name: ls
+        run: ls /home/runner/go/bin
+
+      - name: ls
+        run: find / -name garble
 
       - name: Get dependencies
-        run: |
-          go mod download
+        run:  go mod download
 
       - name: Build On Windows 32
         run: |
