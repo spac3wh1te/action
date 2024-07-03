@@ -19,11 +19,14 @@ jobs:
       - name: Check out branch
         uses: actions/checkout@v2
 
-      - name: Install garble
-        run:  env
+      - name: 1
+        run:  ls /home/runner/go/bin
 
       - name: Install garble
         run: go install mvdan.cc/garble@latest
+
+      - name: 2
+        run: ls /home/runner/go/bin
 
       - name: Get dependencies
         run: |
