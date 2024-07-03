@@ -25,9 +25,6 @@ jobs:
       - name: Install garble
         run: go install mvdan.cc/garble@latest
 
-      - name: 1
-        run: find / -name garble
-
       - name: Get dependencies
         run: |
           go mod download
