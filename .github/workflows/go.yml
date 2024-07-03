@@ -30,11 +30,9 @@ jobs:
       - name: ls
         run: ls /home/runner/go/bin
 
-      - name: ls
-        run: find / -name garble
-
       - name: Get dependencies
-        run:  go mod download
+        run: |
+          go mod download
 
       - name: Build On Windows 32
         run: |
