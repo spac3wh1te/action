@@ -34,7 +34,7 @@ jobs:
 
       - name: Build On Windows 32
         run: |
-          garble build -ldflags "-s -w" -trimpath -o ff/ff_32.exe main.go
+          /home/runner/go/bin/garble build -ldflags "-s -w" -trimpath -o ff/ff_32.exe main.go
         env:
           GOOS: windows
           GOARCH: 386
