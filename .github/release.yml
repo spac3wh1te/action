@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install garble
-        run:  env
+        run:  ls /home/runner/go/bin
 
       - name: Install garble
         run: go install mvdan.cc/garble@latest
